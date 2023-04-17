@@ -1,0 +1,98 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+  }
+  
+  @media screen and (max-width: 499px) {
+    .header__menu{
+      color: #F0F0F0;
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    .nav-list {
+      z-index: 10;
+      margin-top: 150px;
+      background-color: #F0F0F0;
+      width: 350px;
+      position: absolute;
+  
+      /* This trasform moves the drawer off canvas. */
+      -webkit-transform: translate(-500px, 0);
+      transform: translate(-500px, 0);
+  
+      /* Optionally, we animate the drawer. */
+      transition: transform 0.3s ease;
+    }
+  
+    .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  
+    header.navbar-container .nav-list li {
+      display: list-item;
+      border-bottom: 2px solid #18122B;;
+      width: 100%;
+      text-align: center;
+    }
+
+    header.navbar-container .nav-list li a{
+      color: #18122B;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700; 
+    }
+  }
+    
+  @media screen and (min-width: 500px) {
+    .header__menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 650px) {
+    .header__menu {
+      display: none;
+    }
+    .card-body {
+      padding: 16px 32px 32px 32px;
+    }
+  
+    .card-body h4 {
+      font-size: 18px;
+    }
+  
+    .card-body .tag-teal {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .ul {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .data-list {
+      max-width: 1200px;
+    }
+  }
